@@ -24,6 +24,18 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1160px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    max-width: 380px;
+  }
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +85,8 @@ body {
 
 .post__author img,
 .post__img img {
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -145,3 +158,10 @@ body {
   max-width: 70%;
   min-height: 0;
 }
+
+@media screen and (max-width: 780px) {
+  .post--lg .post__title {
+    max-width: none;
+  }
+}
+
